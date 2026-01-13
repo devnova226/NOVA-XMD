@@ -17,14 +17,14 @@ import { upload as megaUpload } from './mega.js';
 const router = express.Router();
 
 const MESSAGE = `
-╭───────❖ KAYA-BOT ❖────────⬣
+╭───────❖ NOVA-XMD ❖────────⬣
 │ ✅ SESSION_ID générée avec succès !
 │
 │ 🚀 Déployez votre bot gratuitement sur Katapump :
-│ 🔗 https://dashboard.katabump.com/auth/login#698fe6
+│ 🔗 https://dashboard.katabump.com/auth/login#efded4
 │
-│ 💬 Group WhatsApp:
-│ ⛓️‍💥https://chat.whatsapp.com/DzvYIvC90wbKf57BCF0VAS
+│ 💬 Channel whatsapp:https://whatsapp.com/channel/0029VbBAMBR7IUYUawEvCi31
+│ ⛓️‍💥https://chat.whatsapp.com/F9T9ETGRfDW5tFpuDRWN61
 ╰──────────────────────────⬣
 `;
 
@@ -94,7 +94,7 @@ router.get('/', async (req, res) => {
                         const match = megaLink.match(/mega\.nz\/file\/([^#]+)#(.+)/);
                         if (!match) throw new Error('Lien Mega invalide');
 
-                        const sessionId = `𝐍𝐎𝐕𝐀 𝐗𝐌𝐃~${match[1]}#${match[2]}`;
+                        const sessionId = `nova~${match[1]}#${match[2]}`;
                         const userJid = jidNormalizedUser(num + '@s.whatsapp.net');
 
                         const m1 = await sock.sendMessage(userJid, { text: sessionId });
