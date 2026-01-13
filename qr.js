@@ -16,13 +16,9 @@ const MESSAGE = `
 https://github.com/GlobalTechInfo/MEGA-MD
 
 *SUPPORT GROUP* 💭
-https://t.me/GlobalTechInfo
-https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07
+https://whatsapp.com/channel/0029VbBAMBR7IUYUawEvCi31
 
-*YOUTUBE TUTORIALS* 🪄 
-https://youtube.com/@GlobalTechInfo
-
-*MEGA-MD--WHATSAPP-BOT* 🥀
+*MEGA-XMD--WHATSAPP-BOT* 🥀
 `;
 
 async function removeFile(filePath) {
